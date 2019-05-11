@@ -19,7 +19,7 @@ python train_meta_matching_network.py --way 5 --shot 1
 python train_meta_matching_network.py --way 5 --shot 5
 
 ## Test
-python train_meta_matching_network.py --way 5 --shot 1 --is_test True --ckp 110
+python train_meta_matching_network.py --way 5 --shot 1 --is_test True --ckp [select the id of checkpoint]
 
 ## Acknowledgements
 Thanks to https://github.com/AntreasAntoniou/ for his Matching Networks implementation of which parts were used for this implementation. More details at https://github.com/AntreasAntoniou/MatchingNetworks
