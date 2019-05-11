@@ -15,6 +15,7 @@ Set right resized $\textit{mini}ImageNet$ directory in data.py
 
 ## Train
 python train_meta_matching_network.py --way 5 --shot 1
+
 python train_meta_matching_network.py --way 5 --shot 5
 
 ## Test
