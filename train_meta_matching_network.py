@@ -21,7 +21,6 @@ if __name__ == '__main__':
     opt = parser.parse_args()
     print(opt)
 
-
     tf.reset_default_graph()
     # Experiment Setup
     sp = 1 # split
@@ -96,4 +95,3 @@ if __name__ == '__main__':
 
                     save_path = saver.save(sess, "saved_models/{}_{}.ckpt".format(experiment_name, e))
                     pbar_e.update(1)
-

@@ -634,13 +634,9 @@ class MetaMatchingNetwork:
         for t, t_v in zip(self.tensor_list, tensors):
             print(t.name, np.linalg.norm(t_v), np.mean(t_v), np.std(t_v), np.max(t_v), np.min(t_v))
 
-
     def check_g(self, sess):
         g1 = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="Classifier/meta_conv1/MetaNetwork_meta_conv/normalize_weights/")
         g2 = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="Classifier/meta_conv2/MetaNetwork_meta_conv/normalize_weights/")
         g1_, g2_ = sess.run([g1, g2])
         print("g1 ", g1_)
         print("g2 ", g2_)
-
-
-

@@ -245,7 +245,3 @@ class ExperimentBuilder:
             total_sg_test_accuracy = total_sg_test_accuracy / total_test_batches
             total_es_test_accuracy = total_es_test_accuracy / total_test_batches
         return total_sg_test_accuracy, total_es_test_accuracy
-
-
-
-

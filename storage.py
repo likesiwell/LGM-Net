@@ -20,7 +20,3 @@ def load_statistics(experiment_name):
             for key, item in zip(data_labels, data):
                 data_dict[key].append(item)
     return data_dict
-
-
-
-

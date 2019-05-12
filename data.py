@@ -7,6 +7,7 @@ from tqdm import tqdm
 import pandas as pd
 import time
 import matplotlib.pyplot as plt
+
 def load_miniImageNet():
     """
     :return: train, val, test tensor with shape (X, 600, 84, 84, 3)
@@ -189,6 +190,3 @@ if __name__ == '__main__':
         for img in x_support_set[i, 2]:
             plt.imshow(img)
             plt.show()
-
-
-

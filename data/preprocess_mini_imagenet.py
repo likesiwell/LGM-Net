@@ -47,6 +47,3 @@ for filename in filesCSVSachinRavi:
                 im_resized = cv2.resize(im, (84, 84), interpolation=cv2.INTER_AREA)
                 cv2.imwrite(os.path.join(resizetargetpath, images[c][i]), im_resized)
                 copyfile(os.path.join(pathminiImageNet, lst_files[selected_images[i]]), os.path.join(targetpath, images[c][i]))
-
-
-
