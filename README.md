@@ -15,7 +15,7 @@ TensorFlow source code for the following publication:
 - [Opencv 3.2.0](https://opencv.org/)
 
 ## Preparation
-Set right resized miniImageNet directory in data.py
+Set the path of resized miniImageNet dataset in `data.py`
 
 ## Train
 ```
@@ -25,7 +25,7 @@ python train_meta_matching_network.py --way 5 --shot 5
 ```
 ## Test
 ```
-python train_meta_matching_network.py --way 5 --shot 1 --is_test True --ckp [select the id of checkpoint]
+python train_meta_matching_network.py --way 5 --shot 1 --is_test True --ckp checkpoint_id
 ```
 
 ## Acknowledgements
