@@ -90,7 +90,7 @@ if __name__ == '__main__':
                     total_test_c_loss, total_test_accuracy = experiment.run_testing_epoch(total_test_batches=total_test_batches, sess=sess)
                     print("Epoch {}: test_loss: {}, test_accuracy: {}".format(e, total_test_c_loss, total_test_accuracy))
 
-                    save_statistics(experiment_name, [e, total_c_loss, total_accuracy, total_val_c_loss, total_accuracy,
+                    save_statistics(experiment_name, [e, total_c_loss, total_accuracy, total_val_c_loss, total_val_accuracy,
                                                       total_test_c_loss, total_test_accuracy, 'lr: {}'.format(lr)])
 
                     save_path = saver.save(sess, "saved_models/{}_{}.ckpt".format(experiment_name, e))
